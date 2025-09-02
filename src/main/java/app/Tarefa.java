@@ -1,23 +1,7 @@
 package app;
 
-public class Tarefa {
-    private long id;
-    private String descricao;
+public class Tarefa extends Atividade { // Classe Tarefa recebe de herança os atibutos da classe Atividade
     private boolean isConcluido; // atributos booleanos tem como prefixos "is"
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
 
     public boolean isConcluido() { // getter
         return isConcluido;
